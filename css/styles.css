@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  background-color: red;
 }
 
 body {
@@ -8,6 +7,7 @@ body {
   font-family: sans-serif;
   background-color: white;
   padding: 20px;
+  margin: auto;
 }
 .logo-amber {
   height: 35px;
@@ -15,26 +15,29 @@ body {
   margin: 10px;
 }
 
-h1 {
-  font-size: 50px;
-  color: rgb(175, 171, 171);
-  margin-left: 25px;
+.h1 {
+  max-width: 400px;
+  padding: 20px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40px;
   color: rgb(221, 221, 221);
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 30px;
   color: rgb(101, 101, 101);
 }
 
-.defiling-container {
-  overflow: hidden;
-  width: 100%;
-  font-size: 30px;
+h4 {
+  margin-left: 10px;
+  font-size: small;
+  color: rgb(101, 101, 101);
+}
+
+h5{
+  font-size: large;
 }
 
 p {
@@ -42,30 +45,49 @@ p {
   color: rgb(175, 171, 171);
 }
 
-.defiling-text {
-  white-space: nowrap;
-  animation-name: scroll-text;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: normal;
-}
-
-@keyframes scroll-text {
-  0%{
-    transform: translateX(1%);
-  }
-  100% {
-    transform: translateX(-25%);
-  }
-}
 
 img {
   max-width: 35px;
 }
 
 .logo-amber {
-  height: 35px;
-  width: 80px;
+  max-width: 120px;
   margin: 10px;
 }
+
+.retailers-info {
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.retailers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.retailers-selling {
+  font-size: 15px;
+  margin: 12px;
+}
+
+.help-numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contactimg {
+  max-width: 300px;
+  margin: 12px;
+  
+}
+
